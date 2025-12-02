@@ -7,7 +7,7 @@ receipt.field_names = ['№','Название продукта', 'Цена','К
 products = []
 pay = []
 
-for i in range(3):
+for i in range(1):
     product = input('Укажите название продукта: ')
     price = int(input('Введите цену продукта: '))
     quantity = int(input('Укажите количество продукта: '))
@@ -17,5 +17,8 @@ for i in range(3):
 
 print(receipt)
 #Сборка и вывод диаграммы
-diagram.bar(products,pay)
+diagram.bar(products,
+            pay,
+            color = 'purple'
+            )
 diagram.show()
